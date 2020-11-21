@@ -1,3 +1,4 @@
+//2017018023 kimdaehwan
 #include <stdio.h>
 
 void func1(int* p);
@@ -15,18 +16,18 @@ int main() {
     tp = &dp;
 
     func1(&i);
-    printf("i = %d\n",i);
+    printf("i = %d\n",i);               // i = 200
 
     func2(&p);
-    printf("*p = %d\n",*p);
+    printf("*p = %d\n",*p);             // p = 300
 
     func3(&dp);
-    printf("**dp = %d\n",**dp);
+    printf("**dp = %d\n",**dp);         //dp = 400
 
     func4(&tp);
-    printf("***tp = %d\n",***tp);
+    printf("***tp = %d\n",***tp);       //tp = 500
 
-    printf("i = %d\n", i);
+    printf("i = %d\n", i);              // i = 500
 
     return 0;
 }
